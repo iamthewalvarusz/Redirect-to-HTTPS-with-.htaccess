@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^YOU_OLD_DOMAIN_WITHOUT_WWW [NC,OR]
-RewriteCond %{HTTP_HOST} ^YOU_NEWS_DOMAIN_WITH_WWW [NC]
+RewriteCond %{HTTP_HOST} ^YOU_NEW_DOMAIN_WITH_WWW [NC]
 RewriteRule ^(.*)$ YOUR_FULL_NEW_DOMAIN/$1 [L,R=301,NC]
 </IfModule>
